@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-graphql-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ttudorandrei/portfolio-graphql-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ttudorandrei/portfolio-graphql-server/issues"
+  },
+  "homepage": "https://github.com/ttudorandrei/portfolio-graphql-server#readme",
+  "dependencies": {
+    "apollo-server": "^3.0.0",
+    "graphql": "^15.5.1"
+  }
+}
