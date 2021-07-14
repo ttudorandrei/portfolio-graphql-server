@@ -1,6 +1,10 @@
-const { ApolloServer, gql } = require("apollo-server");
+const { ApolloServer, makeExecutableSchema } = require("apollo-server");
 
-const server = new ApolloServer({ typeDefs, resolvers });
+const typeDefs = require("./schema");
+
+const schema = makeExecutableSchema({ typeDefs, resolvers });
+
+const server = new ApolloServer({ schema });
 
 server.listen().then(({ url }) => {
   console.log(`🚀  Server ready at ${url}`);
