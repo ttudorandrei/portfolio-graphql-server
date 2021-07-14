@@ -1,8 +1,8 @@
 const User = `type User {
   username: String!
   profilePictureUrl: String!
-  githubUrl: String!
-  name: String!
+  githubUrl: String
+  name: String
   company: String
   location: String
   portfolio: String
