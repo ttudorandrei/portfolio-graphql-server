@@ -10,8 +10,8 @@ const User = `type User {
   aboutMe: String
   followers: Int
   publicRepos: Int
-  createdAt: Int
-  updatedAt: Int
+  createdAt: String
+  updatedAt: String
 }`;
 
 module.exports = User;
