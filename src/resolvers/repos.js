@@ -2,14 +2,15 @@ const { fetchDataFromGithub } = require("../utils/fetchers/github");
 
 const repos = async () => {
   const data = await fetchDataFromGithub(
-    "https://api.github.com/users/ttudorandrei/repos"
+    "https://gh-pinned-repos-5l2i19um3.vercel.app/?username=ttudorandrei"
   );
 
   return data.map((each) => {
     return {
-      repoName: each.name,
-      repoUrl: each.html_url,
-      createdAt: each.created_at,
+      repoName: each.repo,
+      repoUrl: each.link,
+      repoLanguage: each.language,
+      repoForks: each.forks,
     };
   });
 };
