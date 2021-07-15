@@ -5,8 +5,6 @@ const user = async () => {
     "https://api.github.com/users/ttudorandrei"
   );
 
-  console.log(data);
-
   return {
     username: data.login,
     profilePictureUrl: data.avatar_url,
