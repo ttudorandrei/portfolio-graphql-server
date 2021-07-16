@@ -2,7 +2,7 @@ const Repo = `type Repo {
   repoName: String!
   repoUrl: String!
   repoLanguage: String
-  repoForks: Int
+  createdAt: String
 }`;
 
 module.exports = Repo;
