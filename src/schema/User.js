@@ -1,3 +1,4 @@
+// creating user schema
 const User = `type User {
   username: String!
   profilePictureUrl: String!

@@ -1,5 +1,7 @@
+// importing dev created dependencies
 const { fetchDataFromGithub } = require("../utils/fetchers/github");
 
+// resolver for user
 const user = async () => {
   const data = await fetchDataFromGithub(
     "https://api.github.com/users/ttudorandrei"
